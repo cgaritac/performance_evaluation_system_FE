@@ -1,0 +1,1 @@
+export type DeleteModalType = "activity" | "goal";

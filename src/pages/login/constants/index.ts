@@ -1,0 +1,1 @@
+export { LOGIN_TEXTS } from "./login.constants";

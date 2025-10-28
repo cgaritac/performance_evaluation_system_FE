@@ -1,0 +1,1 @@
+export { VARIANT_STYLES } from "./goal-summary-variant.constants";

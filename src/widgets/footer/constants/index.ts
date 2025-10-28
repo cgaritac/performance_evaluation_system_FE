@@ -1,0 +1,1 @@
+export { FOOTER_TEXT } from "./footer.constants";

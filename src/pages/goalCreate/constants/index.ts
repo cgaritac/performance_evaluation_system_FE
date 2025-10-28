@@ -1,0 +1,1 @@
+export { GOAL_CREATE_TEXTS } from "./goal-create.constants";

@@ -1,0 +1,1 @@
+export type { DeleteModalType } from "./delete_modal.types";

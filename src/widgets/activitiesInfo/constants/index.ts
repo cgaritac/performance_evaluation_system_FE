@@ -1,0 +1,1 @@
+export { ACTIVITIES_INFO_TEXTS } from "./activities-info";

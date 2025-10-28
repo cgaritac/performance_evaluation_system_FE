@@ -1,0 +1,1 @@
+export type { ActivityFormData } from './activity-form-data.inteface';

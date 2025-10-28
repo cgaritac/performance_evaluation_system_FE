@@ -1,0 +1,1 @@
+export { HEADER_TEXT } from "./header.constants";

@@ -1,0 +1,1 @@
+export { GOAL_CONST } from "./goal.constants";

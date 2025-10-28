@@ -1,0 +1,1 @@
+export type ConfirmationModalType = "Finish" | "Cancel" | "Save";

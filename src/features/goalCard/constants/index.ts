@@ -1,0 +1,1 @@
+export { GOAL_CARD_TEXTS } from './goal-card.constants';

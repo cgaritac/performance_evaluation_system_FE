@@ -1,0 +1,22 @@
+export const GOAL_FORM_TEXTS = {
+    TITLE_LABEL: 'Title',
+    DESCRIPTION_LABEL: 'Description',
+    CATEGORY_LABEL: 'Category',
+    TYPE_LABEL: 'Type',
+    DUE_DATE_LABEL: 'Due Date',
+    SELECT_CATEGORY: 'Select Category',
+    SELECT_TYPE: 'Select Type',
+    CREATE_GOAL_BUTTON: 'Create',
+    CANCEL_BUTTON: 'Cancel',
+    DATE_ERROR: 'Greater or equal than today, less than 31st of December of actual year',
+    DATE_FORMAT_ERROR: 'The date is required',
+    TITLE_ERROR: 'The title is required',
+    TITLE_MAX_ERROR: 'The title must be less than 100 characters',
+    DESCRIPTION_ERROR: 'The description is required',
+    DESCRIPTION_MAX_ERROR: 'The description must be less than 500 characters',
+    CATEGORY_ERROR: 'The category is required',
+    TYPE_ERROR: 'The type is required',
+    REQUIRED_FIELD: '(*)',
+    UPDATE_GOAL_BUTTON: 'Save',
+    REQUIRED_FIELDS_TEXT: 'Required fields (*)'
+}

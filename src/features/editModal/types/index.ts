@@ -1,0 +1,1 @@
+export type { EditModalType } from "./edit_modal.types";

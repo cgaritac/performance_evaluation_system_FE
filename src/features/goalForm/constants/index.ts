@@ -1,0 +1,1 @@
+export { GOAL_FORM_TEXTS } from "./goal-form.constants";

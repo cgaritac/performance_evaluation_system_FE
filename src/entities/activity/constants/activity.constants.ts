@@ -1,0 +1,3 @@
+export const ACTIVITY_CONST = {
+    FIVE_MINUTES: 300000,
+}

@@ -1,0 +1,1 @@
+export { default as LogoutProvider } from './Logout.provider';

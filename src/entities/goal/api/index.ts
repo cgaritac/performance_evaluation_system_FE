@@ -1,0 +1,1 @@
+export { GOAL_ENDPOINTS } from "./goal-endpoints.api";

@@ -1,0 +1,1 @@
+export { ERROR_TEXTS } from "./error-page.constants";

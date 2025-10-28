@@ -1,0 +1,1 @@
+export { ACTIVITIES_TEXTS } from "./activities.constants";

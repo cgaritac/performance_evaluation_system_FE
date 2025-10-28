@@ -1,0 +1,1 @@
+export { EDIT_MODAL_TEXTS } from "./edit_modal.constants";

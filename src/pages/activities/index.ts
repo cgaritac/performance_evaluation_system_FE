@@ -1,0 +1,1 @@
+export { ActivitiesPage } from "./ui";

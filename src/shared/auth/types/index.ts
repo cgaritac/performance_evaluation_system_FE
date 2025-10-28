@@ -1,0 +1,1 @@
+export type { UserRol } from './user-rol.types';

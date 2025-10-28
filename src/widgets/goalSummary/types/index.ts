@@ -1,0 +1,1 @@
+export type { GoalSummaryVariant } from "./goal-summary.types";

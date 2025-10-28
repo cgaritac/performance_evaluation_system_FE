@@ -1,0 +1,1 @@
+export { DELETE_MODAL_TEXTS } from "./delete_modal.constants";

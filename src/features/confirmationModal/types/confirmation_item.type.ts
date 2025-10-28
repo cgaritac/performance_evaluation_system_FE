@@ -1,0 +1,1 @@
+export type ConfirmationItemType = "feedback" | "goal";

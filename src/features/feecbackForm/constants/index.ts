@@ -1,0 +1,1 @@
+export { FEEDBACK_FORM_TEXTS } from "./feedback-form.constants";

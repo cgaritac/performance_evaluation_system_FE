@@ -1,0 +1,3 @@
+export const EVALUATION_CONST = {
+    THIRTY_MINUTES: 1800000,
+}

@@ -1,0 +1,1 @@
+export { EVALUATION_TABLE_TEXTS } from "./evaluation-table.constants";

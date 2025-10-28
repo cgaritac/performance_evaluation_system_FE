@@ -1,0 +1,1 @@
+export { LOGO_REFRESH_TEXTS } from './logo-refresh.constants';

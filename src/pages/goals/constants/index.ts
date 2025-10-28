@@ -1,0 +1,1 @@
+export { GOALS_TEXTS } from "./goals.constants";
