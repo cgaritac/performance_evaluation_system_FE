@@ -244,7 +244,7 @@ This project is private and owned by **CGC**. All rights reserved.
 
 ## 👥 Team
 
-Developed for **CGC** - Performance Evaluation System
+Developed by **CGC**
 
 ---
 
