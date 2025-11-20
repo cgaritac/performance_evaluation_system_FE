@@ -1,7 +1,7 @@
-import { Header, Button, useHandleLogoutHook } from "~/shared";
 import { LogoRefresh } from "~/features";
-import { Logo } from "../lib";
+import { Button, Header, useHandleLogoutHook } from "~/shared";
 import { HEADER_TEXT } from "../constants";
+import { Logo } from "../lib";
 
 const HeaderComponent: React.FC = () => {
     const { handleLogout } = useHandleLogoutHook();
@@ -16,7 +16,7 @@ const HeaderComponent: React.FC = () => {
                 <LogoRefresh 
                     imageRoute={Logo}
                     imageAlt={HEADER_TEXT.IMAGE_ALT}
-                    imageClassName="my-1"
+                    imageClassName="h-12 w-auto object-contain my-1"
                 />
             } 
             rightChildren={

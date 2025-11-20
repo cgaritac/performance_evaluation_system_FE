@@ -5,5 +5,5 @@ export interface User {
     role: UserRol | null;
     id: number;
     fullName: string;
-    companyId: number;
+    departmentId: number;
 }

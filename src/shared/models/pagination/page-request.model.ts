@@ -7,16 +7,16 @@ class PageRequestModel implements PageRequest {
     public sortBy?: string;
     public sortDirection?: string;
     public year?: number;
-    public companyId?: number;
+    public departmentId?: number;
 
-    private constructor(page: number, pageSize: number, searchTerm?: string, sortBy?: string, sortDirection?: string, year?: number, companyId?: number) {
+    private constructor(page: number, pageSize: number, searchTerm?: string, sortBy?: string, sortDirection?: string, year?: number, departmentId?: number) {
         this.page = page;
         this.pageSize = pageSize;
         this.searchTerm = searchTerm;
         this.sortBy = sortBy;
         this.sortDirection = sortDirection;
         this.year = year;
-        this.companyId = companyId;
+        this.departmentId = departmentId;
     }
 
     public static create({
@@ -26,7 +26,7 @@ class PageRequestModel implements PageRequest {
         sortBy,
         sortDirection,
         year,
-        companyId,
+        departmentId,
       }: Partial<PageRequest>): PageRequestModel {
         return new PageRequestModel(
           page,
@@ -35,7 +35,7 @@ class PageRequestModel implements PageRequest {
           sortBy,
           sortDirection,
           year,
-          companyId
+          departmentId
         );
       }
     
@@ -49,8 +49,8 @@ class PageRequestModel implements PageRequest {
         if (this.sortBy) params.append("sortBy", this.sortBy);
         if (this.sortDirection) params.append("sortDirection", this.sortDirection);
         if (this.year !== undefined) params.append("year", String(this.year));
-        if (this.companyId !== undefined)
-          params.append("companyId", String(this.companyId));
+        if (this.departmentId !== undefined)
+          params.append("departmentId", String(this.departmentId));
     
         return params.toString();
       }

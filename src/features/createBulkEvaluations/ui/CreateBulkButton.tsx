@@ -4,12 +4,12 @@ import { Button, PlusIcon } from "~/shared";
 import { CREATE_BULK_TEXTS } from "../constants";
 
 interface CreateBulkButtonProps {
-  companyId: number;
+  departmentId: number;
   year: number;
 }
 
 const CreateBulkButton: React.FC<CreateBulkButtonProps> = ({
-  companyId,
+  departmentId,
   year,
 }) => {
   const { mutate: createBulkEvaluations, isPending: isCreatingBulkEvaluations } = usePostEvaluations();
@@ -19,7 +19,7 @@ const CreateBulkButton: React.FC<CreateBulkButtonProps> = ({
     const requestData = EvaluationRequestModel.create({ 
       id: 0, 
       year, 
-      companyId 
+      departmentId 
     });
     
     createBulkEvaluations(requestData);

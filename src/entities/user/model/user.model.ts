@@ -1,18 +1,18 @@
-import { User } from "./user.interface";
 import { UserRol } from "~/shared";
+import { User } from "./user.interface";
 
 class UserModel implements User {
     public id: number;
     public fullName: string;
     public email: string | null;
-    public companyId: number;
+    public departmentId: number;
     public role: UserRol | null;
 
-    private constructor(id: number, fullName: string, email: string, companyId: number, role: UserRol) {
+    private constructor(id: number, fullName: string, email: string, departmentId: number, role: UserRol) {
         this.id = id;
         this.fullName = fullName;
         this.email = email;
-        this.companyId = companyId;
+        this.departmentId = departmentId;
         this.role = role;
     }
 }

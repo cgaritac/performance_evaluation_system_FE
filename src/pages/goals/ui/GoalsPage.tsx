@@ -32,7 +32,7 @@ const GoalsPage: React.FC = () => {
             id: 0,
             employeeId: Number(currentEmployeeId),
             year: Number(year),
-            companyId: userData?.companyId
+            departmentId: userData?.departmentId
         })
     );
 

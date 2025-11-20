@@ -1,11 +1,11 @@
-import { EvaluationRequest } from "./evaluation-request.interface";
 import { FeedbackEnum } from "../enums";
+import { EvaluationRequest } from "./evaluation-request.interface";
 
 class EvaluationRequestModel implements EvaluationRequest {
   public id: number;
   public employeeId?: number;
   public year: number;
-  public companyId?: number;
+  public departmentId?: number;
   public feedback?: FeedbackEnum;
   public feedbackComments?: string;
 
@@ -13,14 +13,14 @@ class EvaluationRequestModel implements EvaluationRequest {
     id: number,
     year: number,
     employeeId?: number,
-    companyId?: number,
+    departmentId?: number,
     feedback?: FeedbackEnum,
     feedbackComments?: string
   ) {
     this.id = id;
     this.employeeId = employeeId;
     this.year = year;
-    this.companyId = companyId;
+    this.departmentId = departmentId;
     this.feedback = feedback;
     this.feedbackComments = feedbackComments;
   }
@@ -29,11 +29,11 @@ class EvaluationRequestModel implements EvaluationRequest {
     id = 0,
     employeeId,
     year = 0,
-    companyId,
+    departmentId,
     feedback,
     feedbackComments
   }: Partial<EvaluationRequest>): EvaluationRequestModel {
-    return new EvaluationRequestModel(id, year, employeeId, companyId, feedback, feedbackComments);
+    return new EvaluationRequestModel(id, year, employeeId, departmentId, feedback, feedbackComments);
   }
 
   public toQueryString(): string {
@@ -43,7 +43,7 @@ class EvaluationRequestModel implements EvaluationRequest {
     params.append("year", String(this.year));
 
     if (this.employeeId !== undefined) params.append("employeeId", String(this.employeeId));
-    if (this.companyId !== undefined) params.append("companyId", String(this.companyId));
+    if (this.departmentId !== undefined) params.append("departmentId", String(this.departmentId));
     if (this.feedback !== undefined) params.append("feedback", String(this.feedback));
     if (this.feedbackComments !== undefined) params.append("feedbackComments", String(this.feedbackComments));
 

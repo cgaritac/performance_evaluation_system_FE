@@ -1,5 +1,5 @@
-import { EvaluationRequestModel, useUser, useGetEvaluationWithGoals } from "~/entities";
-import { Hero, GLOBAL_CONSTANTS, useEvaluationSelection, HeroEsqueleton } from "~/shared";
+import { EvaluationRequestModel, useGetEvaluationWithGoals, useUser } from "~/entities";
+import { GLOBAL_CONSTANTS, Hero, HeroEsqueleton, useEvaluationSelection } from "~/shared";
 import { EvaluationsInfo } from "~/widgets";
 
 const HomePage: React.FC = () => {
@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
             id: 0,
             employeeId: userData?.id ?? 0,
             year: new Date().getFullYear(),
-            companyId: userData?.companyId ?? 0,
+            departmentId: userData?.departmentId ?? 0,
         })
     );
 

@@ -5,5 +5,5 @@ export interface PageRequest {
     sortBy?: string;
     sortDirection?: string;
     year?: number;
-    companyId?: number;
+    departmentId?: number;
   }

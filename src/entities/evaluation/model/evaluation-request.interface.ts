@@ -4,7 +4,7 @@ export interface EvaluationRequest {
     id: number;
     employeeId?: number;
     year: number;
-    companyId?: number;
+    departmentId?: number;
     feedback?: FeedbackEnum;
     feedbackComments?: string;
 }

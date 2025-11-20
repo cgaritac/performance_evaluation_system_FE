@@ -6,12 +6,12 @@ import { ViewIcon } from "../assets";
 import { EVALUATION_TABLE_TEXTS } from "../constants";
 
 interface EvaluationTableProps {
-    userCompanyId: number,
+    userDepartmentId: number,
     yearSelected: number,
     searchTermTyped: string
 }
 
-const EvaluationTable: React.FC<EvaluationTableProps> = ({userCompanyId, yearSelected, searchTermTyped}) => {
+const EvaluationTable: React.FC<EvaluationTableProps> = ({userDepartmentId, yearSelected, searchTermTyped}) => {
   const [pageNumber, setPageNumber] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [sortBy, setSortBy] = useState<string>('');
@@ -25,7 +25,7 @@ const EvaluationTable: React.FC<EvaluationTableProps> = ({userCompanyId, yearSel
     sortBy: sortBy,
     sortDirection: sortDirection,
     year: yearSelected,
-    companyId: userCompanyId,
+    departmentId: userDepartmentId,
   });
 
   const { data, isLoading } = useGetEvaluations(pageRequest);
